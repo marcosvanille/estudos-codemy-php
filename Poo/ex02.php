@@ -40,18 +40,17 @@ class  carro {
     {
 $this->ano = $ano;
     }
+
     public function exibir()
     {
     return [
         "modelo"=>$this->getModelo(),
         "motor"=>$this->getMotor(),
         "ano"=>$this->getAno()
-
 ];
-
     }
-
 }
+
 $gol = new carro();
 $gol->setMotor("Gol GT");
 $gol->setModelo("1.6");
