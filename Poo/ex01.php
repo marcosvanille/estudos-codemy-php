@@ -2,18 +2,18 @@
 
 class Pessoa {
 
-  $nome;  //Atributo
+  public $nome;  //Atributo
 
 
 public function falar(){//Metodo
 
-    return "O meu nome e".$this->falar();
+    return "O meu nome e ".$this->nome;
 }
 
 }
 
 $glaucio = new Pessoa();
 $glaucio->nome = "Glaucio Daniel";
-$glaucio->falar();
+echo $glaucio->falar();
 
 
