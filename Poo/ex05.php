@@ -27,7 +27,7 @@ class Programador extends Pessoa{
 
         echo $this->nome  . "<br/>";
         echo $this->idade . "<br/>";
-        echo $this->senha . "<br/>";
+//        echo $this->senha . "<br/>";
 
     }
 
