@@ -58,7 +58,7 @@ echo "------------------<br/>";
 
 $garfield = new gato();
 
-echo $garfield ->falar() . "<br/>";
+echo $garfield->falar() . "<br/>";
 echo $garfield->mover() . "<br/>";
 
 echo "------------------<br/>";
