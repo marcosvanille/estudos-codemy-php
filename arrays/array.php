@@ -1,5 +1,7 @@
 <?php
 
+
+
 $frutas = ["laranja","abacaxi","melancia"];
 
-print_r($frutas);
+var_dump($frutas);

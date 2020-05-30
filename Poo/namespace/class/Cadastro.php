@@ -1,20 +1,25 @@
 <?php
 
-class Cadastro{
-
+class cadastro
+{
     private $nome;
     private $email;
     private $senha;
 
+
     public function getNome():string
     {
+
+
         return $this->nome;
+
     }
 
     public function getEmail():string
     {
 
         return $this->email;
+
     }
 
     public function getSenha():string
@@ -23,24 +28,28 @@ class Cadastro{
 
     }
 
-    public function setNome($nome){
+    public function setnome($nome)
+    {
         $this->nome = $nome;
-    }
 
-    public function setEmail($email){
+    }
+    public function setEmail($email)
+    {
         $this->email = $email;
-    }
 
-    public function setSenha($senha){
+    }
+    public function setSenha($senha)
+    {
         $this->senha = $senha;
+
     }
 
     public function __toString()
     {
-        return json_encode(array(
-           "nome"=>$this->getNome(),
-           "email"=>$this->getEmail(),
-           "senha"=>$this->getSenha()
+      return json_encode(array(
+         "nome"=>$this->getNome(),
+         "email"=>$this->getEmail(),
+         "senha"=>$this->getSenha()
 
       ));
     }

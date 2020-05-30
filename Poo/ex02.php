@@ -2,7 +2,8 @@
 
 //GETTER E SETTER
 
-class  carro {
+class  carro
+{
 
     private $modelo;
     private $motor;
@@ -11,13 +12,13 @@ class  carro {
 
     public function getModelo()
     {
-        return $this->modelo;
+        return $this->modelo; //o return so irá ser usado quando esta devolvendo o atributo para ser exibido ou manipulado pelo objeto ,que nada mais e oque estancia a classe
     }
 
 
-    public function setModelo($modelo)
+    public function setModelo($modelo1)
     {
-        $this->modelo = $modelo;
+        $this->modelo = $modelo1;
     }
 
 
@@ -31,23 +32,23 @@ class  carro {
         $this->motor = $motor;
     }
 
-   function getAno()
+    function getAno()
     {
         return $this->ano;
     }
 
     public function setAno($ano)
     {
-$this->ano = $ano;
+        $this->ano = $ano;
     }
 
     public function exibir()
     {
-    return [
-        "modelo"=>$this->getModelo(),
-        "motor"=>$this->getMotor(),
-        "ano"=>$this->getAno()
-];
+        return [
+            "modelo" => $this->getModelo(),
+            "motor" => $this->getMotor(),
+            "ano" => $this->getAno()
+        ];
     }
 }
 

@@ -1,4 +1,5 @@
 <?php
+//Metodos Estaticos
 
 class Documento
 {

@@ -1,4 +1,4 @@
-<?php
+ <?php
   //ENCAPSULAMENTO
 
 class Pessoa{
