@@ -27,9 +27,9 @@ class  carro
         return $this->motor;
     }
 
-    public function setMotor($motor)
+    public function setMotor($motor1)
     {
-        $this->motor = $motor;
+        $this->motor = $motor1;
     }
 
     function getAno()
@@ -37,24 +37,25 @@ class  carro
         return $this->ano;
     }
 
-    public function setAno($ano)
+    public function setAno($ano1)
     {
-        $this->ano = $ano;
+        $this->ano = $ano1;
     }
 
     public function exibir()
     {
         return [
-            "modelo" => $this->getModelo(),
-            "motor" => $this->getMotor(),
-            "ano" => $this->getAno()
+             $this->getModelo(),
+            $this->getMotor(),
+          $this->getAno()
         ];
     }
 }
 
+
 $gol = new carro();
-$gol->setMotor("Gol GT");
-$gol->setModelo("1.6");
+$gol->setMotor("1.6");
+$gol->setModelo("Gol GTI ");
 $gol->setAno("2017");
 
 
